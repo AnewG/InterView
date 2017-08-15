@@ -38,3 +38,21 @@ d,a,m,n
 会发现规律是阶乘
 像判断有没可能的问题和有多少种符合条件之类的问题都可以用类似解法
 ```
+
+## 列出所有子数组
+
+```
+function SubArray(arr) {
+    var n = arr.length;
+    var temp = [];
+    for (var i = 0; i < n; i++) {
+        for (var j = i; j < n; j++) {
+            for (var k = i; k <= j; k++) {
+                temp.push(arr[k]);
+            }
+			console.log(temp);
+			temp = [];
+        }
+    }
+}
+```
