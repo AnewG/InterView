@@ -50,8 +50,8 @@ function SubArray(arr) {
             for (var k = i; k <= j; k++) {
                 temp.push(arr[k]);
             }
-			console.log(temp);
-			temp = [];
+	    console.log(temp);
+	    temp = [];
         }
     }
 }
